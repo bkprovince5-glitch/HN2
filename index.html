@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quy trình nghiệp vụ quản lý thuế</title>
-    <meta name="description" content="Dự kiến khung quy trình nghiệp vụ">
+    <meta name="description" content="Đề án tái thiết kế quy trình nghiệp vụ">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
@@ -3402,7 +3402,7 @@
                             
                             <!-- Cá nhân tiền lương tiền công -->
                             <div class="doi-tuong-box">
-                                <h5><i class="fas fa-user"></i>Cá nhân tiền khác (Tiền lương, tiền công, thu nhập cao, thu nhập khác)</h5>
+                                <h5><i class="fas fa-user"></i>Cá nhân khác (tiền lương tiền công, thu nhập cao, thu nhập khác)</h5>
                                 <ul>
                                     <li>Đa dạng nguồn thu nhập, khó kiểm soát hết.</li>
                                     <li> Có thể có các nguồn thu nhập từ nước ngoài, từ các nền tảng online (Google, YouTube, Facebook...).</li>
@@ -4957,76 +4957,27 @@ Hiện hành các quy trình nghiệp vụ quản lý thuế được thực hi�
                                             <h4>1. Tiếp nhận hồ sơ</h4>
                                             <span class="sub-toggle-icon">▼</span>
                                         </div>
-                                        <div class="sub-process-content">
-                                            <div class="process-item system">1.1. Xác định nghĩa vụ kê khai <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item system">1.2. Đôn đốc nộp HSKT <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item system">1.3. Hỗ trợ khai thuế <span class="badge">Hệ thống</span></div>
-                                            
-                                            <!-- Bổ sung nguồn dữ liệu -->
-                                            <div class="data-sources">
-                                                <h5>Nguồn thông tin, dữ liệu:</h5>
-                                                <div class="data-source-item">Hồ sơ đăng ký thuế của NNT <span class="data-source-badge">CSDL nội bộ</span></div>
-                                                <div class="data-source-item">Lịch kê khai thuế theo loại hình DN <span class="data-source-badge">CSDL nội bộ</span></div>
-                                                <div class="data-source-item">Lịch sử kê khai của NNT <span class="data-source-badge">CSDL Hồ sơ NNT</span></div>
-                                                <div class="data-source-item">Hệ thống hỗ trợ kê khai tự động <span class="data-source-badge">API</span></div>
-                                            </div>
-                                        </div>
-                                        
+                                                                                
                                         <div class="sub-process-header">
                                             <h4>2. Xử lý hồ sơ</h4>
                                             <span class="sub-toggle-icon">▼</span>
                                         </div>
-                                        <div class="sub-process-content">
-                                            <div class="process-item system">2.1. Kiểm tra điều kiện tiếp nhận, chấp nhận HSKT <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item system">2.2. Xử lý, ghi nhận nghĩa vụ HSKT <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item system">2.3. Xác định hành vi vi phạm <span class="badge">Hệ thống</span></div>
-                                            
-                                            <!-- Bổ sung nguồn dữ liệu -->
-                                            <div class="data-sources">
-                                                <h5>Nguồn thông tin, dữ liệu:</h5>
-                                                <div class="data-source-item">Dữ liệu tờ khai thuế <span class="data-source-badge">CSDL Hồ sơ NNT</span></div>
-                                                <div class="data-source-item">Hệ thống hóa đơn điện tử <span class="data-source-badge">API</span></div>
-                                                <div class="data-source-item">Quy tắc kiểm tra tờ khai <span class="data-source-badge">CSDL nội bộ</span></div>
-                                                <div class="data-source-item">Lịch sử vi phạm của NNT <span class="data-source-badge">CSDL Hồ sơ NNT</span></div>
-                                            </div>
-                                        </div>
-                                                                                            
+                                                                                                                                    
                                         <div class="sub-process-header">
                                             <h4>3. Trả kết quả xử lý</h4>
                                             <span class="sub-toggle-icon">▼</span>
                                         </div>
-                                        <div class="sub-process-content">
-                                            <div class="process-item system">3.1. Trả thông báo nghĩa vụ thuế cho NNT <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item system">3.2. Cập nhật nghĩa vụ thuế <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item system">3.4. Tiếp nhận và hạch toán chứng từ nộp tiền <span class="badge">Hệ thống</span></div>
-                                            
-                                            <!-- Bổ sung nguồn dữ liệu -->
-                                            <div class="data-sources">
-                                                <h5>Nguồn thông tin, dữ liệu:</h5>
-                                                <div class="data-source-item">Mẫu thông báo nghĩa vụ thuế <span class="data-source-badge">CSDL nội bộ</span></div>
-                                                <div class="data-source-item">Hệ thống ngân hàng/TK kho bạc <span class="data-source-badge">API</span></div>
-                                                <div class="data-source-item">Sổ theo dõi nghĩa vụ thuế <span class="data-source-badge">CSDL Hồ sơ NNT</span></div>
-                                            </div>
-                                        </div>
+                                        
                                         <div class="sub-process-header">
-                                            <h4>4. Xử lý trong trường hợp Hệ thống có cảnh báo rủi ro/xử lý vi phạm</h4>
+                                            <h4>4. Kiểm soát, xử lý rủi ro</h4>
                                             <span class="sub-toggle-icon">▼</span>
                                         </div>
-                                        <div class="sub-process-content">
-                                            <div class="process-item officer">4.1 Phân công CBT xử lý <span class="badge">Cán bộ</span></div>
-                                            <div class="process-item combined">4.2 Thực hiện theo quy trình rủi ro và kiểm tra thông tin, tài liệu giải trình (nếu có) <span class="badge">Phối hợp</span></div>
-                                            <div class="process-item officer">4.3 Xử lý vi phạm nếu có <span class="badge">Cán bộ</span></div>
-                                            <div class="process-item system">4.4 Phân tích xu hướng tuân thủ/vi phạm/rủi ro <span class="badge">Hệ thống</span></div>
-                                        </div>
+                                        
                                         <div class="sub-process-header">
                                             <h4>5. Báo cáo kết quả thực hiện</h4>
                                             <span class="sub-toggle-icon">▼</span>
                                         </div>
-                                        <div class="sub-process-content">
-                                            <div class="process-item system">5.1 Tổng hợp số liệu kê khai, nộp thuế <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item system">5.2 Phân tích tỷ lệ tuân thủ theo ngành nghề, địa bàn <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item combined">5.3 Báo cáo định kỳ về tình hình kê khai, nộp thuế <span class="badge">Phối hợp</span></div>
-                                        </div>                        
+                                                            
                                     </div>
                                 </div>
                             </div>
@@ -5034,7 +4985,7 @@ Hiện hành các quy trình nghiệp vụ quản lý thuế được thực hi�
                             <!-- Hoàn thuế -->
                             <div class="process-container">
                                 <div class="process-header">
-                                    <h3>Hoàn thuế</h3>
+                                    <h3>Hoàn thuế, miễn thuế, giảm thuế</h3>
                                     <span class="toggle-icon">▼</span>
                                 </div>
                                 <div class="process-content">
@@ -5043,171 +4994,36 @@ Hiện hành các quy trình nghiệp vụ quản lý thuế được thực hi�
                                             <h4>1. Tiếp nhận hồ sơ</h4>
                                             <span class="sub-toggle-icon">▼</span>
                                         </div>
-                                        <div class="sub-process-content">
-                                            <div class="process-item system">Xử lý theo quy trình kê khai và kiểm tra điều kiện kê khai (mục IV) <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item system">Hệ thống nhận tờ khai có dòng hoàn thuế hoặc MẪU ĐỀ NGHỊ HOÀN RIÊNG <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item system">So sánh tờ khai, hóa đơn đầu vào, giao dịch tài chính, báo cáo tài chính, số liệu CQT theo dõi, kiểm tra số nợ thuế… <span class="badge">Hệ thống</span></div>
-                                            
-                                            <!-- Bổ sung nguồn dữ liệu -->
-                                            <div class="data-sources">
-                                                <h5>Nguồn thông tin, dữ liệu:</h5>
-                                                <div class="data-source-item">Dữ liệu tờ khai thuế <span class="data-source-badge">CSDL Hồ sơ NNT</span></div>
-                                                <div class="data-source-item">Hệ thống hóa đơn điện tử <span class="data-source-badge">API</span></div>
-                                                <div class="data-source-item">Hệ thống giao dịch tài chính ngân hàng <span class="data-source-badge">API</span></div>
-                                                <div class="data-source-item">Báo cáo tài chính của doanh nghiệp <span class="data-source-badge">CSDL Hồ sơ NNT</span></div>
-                                            </div>
-                                        </div>
+                                        
                                         
                                         <div class="sub-process-header">
                                             <h4>2. Xử lý hồ sơ</h4>
                                             <span class="sub-toggle-icon">▼</span>
                                         </div>
-                                        <div class="sub-process-content">
-                                            <div class="process-item system">2.1 Kiểm tra điều kiện, thời hạn hoàn thuế <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item system">2.2 Phân loại hồ sơ theo rủi ro <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item combined">2.3 Xác minh tính hợp lệ của hồ sơ, chứng từ <span class="badge">Phối hợp</span></div>
-                                            <div class="process-item system">2.4 Xác định số tiền hoàn thuế <span class="badge">Hệ thống</span></div>
-                                            
-                                            <!-- Bổ sung nguồn dữ liệu -->
-                                            <div class="data-sources">
-                                                <h5>Nguồn thông tin, dữ liệu:</h5>
-                                                <div class="data-source-item">Quy định về hoàn thuế <span class="data-source-badge">CSDL nội bộ</span></div>
-                                                <div class="data-source-item">Quy tắc phân loại rủi ro hoàn thuế <span class="data-source-badge">CSDL rủi ro</span></div>
-                                                <div class="data-source-item">Lịch sử hoàn thuế của NNT <span class="data-source-badge">CSDL Hồ sơ NNT</span></div>
-                                            </div>
-                                        </div>
+                                        
                                         
                                         <div class="sub-process-header">
                                             <h4>3. Trả kết quả xử lý</h4>
                                             <span class="sub-toggle-icon">▼</span>
                                         </div>
-                                        <div class="sub-process-content">
-                                            <div class="process-item system">3.1 Thông báo kết quả hoàn thuế <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item system">3.2 Chuyển tiền hoàn thuế <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item system">3.3 Cập nhật số liệu hoàn thuế <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item system">3.4 Đánh giá sự hài lòng <span class="badge">Hệ thống</span></div>
-                                            
-                                            <!-- Bổ sung nguồn dữ liệu -->
-                                            <div class="data-sources">
-                                                <h5>Nguồn thông tin, dữ liệu:</h5>
-                                                <div class="data-source-item">Mẫu thông báo hoàn thuế <span class="data-source-badge">CSDL nội bộ</span></div>
-                                                <div class="data-source-item">Hệ thống ngân hàng <span class="data-source-badge">API</span></div>
-                                                <div class="data-source-item">Sổ theo dõi hoàn thuế <span class="data-source-badge">CSDL Hồ sơ NNT</span></div>
-                                            </div>
-                                        </div>
+                                        
                                         
                                         <div class="sub-process-header">
-                                            <h4>4. Xử lý trong trường hợp Hệ thống có cảnh báo rủi ro/xử lý vi phạm</h4>
+                                            <h4>4. Kiểm soát, xử lý rủi ro</h4>
                                             <span class="sub-toggle-icon">▼</span>
                                         </div>
-                                        <div class="sub-process-content">
-                                            <div class="process-item officer">4.1 Phân công CBT xử lý <span class="badge">Cán bộ</span></div>
-                                            <div class="process-item combined">4.2 Thực hiện kiểm tra, xác minh hồ sơ <span class="badge">Phối hợp</span></div>
-                                            <div class="process-item officer">4.3 Xử lý vi phạm nếu có <span class="badge">Cán bộ</span></div>
-                                            <div class="process-item system">4.4 Phân tích xu hướng hoàn thuế <span class="badge">Hệ thống</span></div>
-                                        </div>
+                                        
                                         
                                         <div class="sub-process-header">
                                             <h4>5. Báo cáo kết quả thực hiện</h4>
                                             <span class="sub-toggle-icon">▼</span>
                                         </div>
-                                        <div class="sub-process-content">
-                                            <div class="process-item system">5.1 Tổng hợp số liệu hoàn thuế <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item system">5.2 Phân tích hiệu quả hoàn thuế <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item combined">5.3 Báo cáo định kỳ về tình hình hoàn thuế <span class="badge">Phối hợp</span></div>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
 
-                            <!--Miễn, giảm thuế-->
-                            <div class="process-container">
-                                <div class="process-header">
-                                    <h3>Miễn, giảm thuế</h3>
-                                    <span class="toggle-icon">▼</span>
-                                </div>
-                                <div class="process-content">
-                                    <div class="sub-process-container">
-                                        <div class="sub-process-header">
-                                            <h4>1. Tiếp nhận hồ sơ</h4>
-                                            <span class="sub-toggle-icon">▼</span>
-                                        </div>
-                                        <div class="sub-process-content">
-                                            <div class="process-item system">Xử lý theo quy trình kê khai và kiểm tra điều kiện kê khai (mục IV) <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item system">Hệ thống nhận tờ khai có dòng hoàn thuế hoặc MẪU ĐỀ NGHỊ HOÀN RIÊNG <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item system">So sánh tờ khai, hóa đơn đầu vào, giao dịch tài chính, báo cáo tài chính, số liệu CQT theo dõi, kiểm tra số nợ thuế… <span class="badge">Hệ thống</span></div>
-                                            
-                                            <!-- Bổ sung nguồn dữ liệu -->
-                                            <div class="data-sources">
-                                                <h5>Nguồn thông tin, dữ liệu:</h5>
-                                                <div class="data-source-item">Dữ liệu tờ khai thuế <span class="data-source-badge">CSDL Hồ sơ NNT</span></div>
-                                                <div class="data-source-item">Hệ thống hóa đơn điện tử <span class="data-source-badge">API</span></div>
-                                                <div class="data-source-item">Hệ thống giao dịch tài chính ngân hàng <span class="data-source-badge">API</span></div>
-                                                <div class="data-source-item">Báo cáo tài chính của doanh nghiệp <span class="data-source-badge">CSDL Hồ sơ NNT</span></div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="sub-process-header">
-                                            <h4>2. Xử lý hồ sơ</h4>
-                                            <span class="sub-toggle-icon">▼</span>
-                                        </div>
-                                        <div class="sub-process-content">
-                                            <div class="process-item system">2.1 Kiểm tra điều kiện, thời hạn hoàn thuế <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item system">2.2 Phân loại hồ sơ theo rủi ro <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item combined">2.3 Xác minh tính hợp lệ của hồ sơ, chứng từ <span class="badge">Phối hợp</span></div>
-                                            <div class="process-item system">2.4 Xác định số tiền hoàn thuế <span class="badge">Hệ thống</span></div>
-                                            
-                                            <!-- Bổ sung nguồn dữ liệu -->
-                                            <div class="data-sources">
-                                                <h5>Nguồn thông tin, dữ liệu:</h5>
-                                                <div class="data-source-item">Quy định về hoàn thuế <span class="data-source-badge">CSDL nội bộ</span></div>
-                                                <div class="data-source-item">Quy tắc phân loại rủi ro hoàn thuế <span class="data-source-badge">CSDL rủi ro</span></div>
-                                                <div class="data-source-item">Lịch sử hoàn thuế của NNT <span class="data-source-badge">CSDL Hồ sơ NNT</span></div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="sub-process-header">
-                                            <h4>3. Trả kết quả xử lý</h4>
-                                            <span class="sub-toggle-icon">▼</span>
-                                        </div>
-                                        <div class="sub-process-content">
-                                            <div class="process-item system">3.1 Thông báo kết quả hoàn thuế <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item system">3.2 Chuyển tiền hoàn thuế <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item system">3.3 Cập nhật số liệu hoàn thuế <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item system">3.4 Đánh giá sự hài lòng <span class="badge">Hệ thống</span></div>
-                                            
-                                            <!-- Bổ sung nguồn dữ liệu -->
-                                            <div class="data-sources">
-                                                <h5>Nguồn thông tin, dữ liệu:</h5>
-                                                <div class="data-source-item">Mẫu thông báo hoàn thuế <span class="data-source-badge">CSDL nội bộ</span></div>
-                                                <div class="data-source-item">Hệ thống ngân hàng <span class="data-source-badge">API</span></div>
-                                                <div class="data-source-item">Sổ theo dõi hoàn thuế <span class="data-source-badge">CSDL Hồ sơ NNT</span></div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="sub-process-header">
-                                            <h4>4. Xử lý trong trường hợp Hệ thống có cảnh báo rủi ro/xử lý vi phạm</h4>
-                                            <span class="sub-toggle-icon">▼</span>
-                                        </div>
-                                        <div class="sub-process-content">
-                                            <div class="process-item officer">4.1 Phân công CBT xử lý <span class="badge">Cán bộ</span></div>
-                                            <div class="process-item combined">4.2 Thực hiện kiểm tra, xác minh hồ sơ <span class="badge">Phối hợp</span></div>
-                                            <div class="process-item officer">4.3 Xử lý vi phạm nếu có <span class="badge">Cán bộ</span></div>
-                                            <div class="process-item system">4.4 Phân tích xu hướng hoàn thuế <span class="badge">Hệ thống</span></div>
-                                        </div>
-                                        
-                                        <div class="sub-process-header">
-                                            <h4>5. Báo cáo kết quả thực hiện</h4>
-                                            <span class="sub-toggle-icon">▼</span>
-                                        </div>
-                                        <div class="sub-process-content">
-                                            <div class="process-item system">5.1 Tổng hợp số liệu hoàn thuế <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item system">5.2 Phân tích hiệu quả hoàn thuế <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item combined">5.3 Báo cáo định kỳ về tình hình hoàn thuế <span class="badge">Phối hợp</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            
                             <!--Quản lý nghĩa vụ-->
                             <div class="process-container">
                                 <div class="process-header">
@@ -5217,81 +5033,40 @@ Hiện hành các quy trình nghiệp vụ quản lý thuế được thực hi�
                                 <div class="process-content">
                                     <div class="sub-process-container">
                                         <div class="sub-process-header">
-                                            <h4>1. Tiếp nhận hồ sơ</h4>
+                                            <h4>1. Ghi nhận, tổng hợp nghĩa vụ thuế</h4>
+                                            <span class="sub-toggle-icon">▼</span>
+                                        </div>
+                                        
+                                        
+                                        <div class="sub-process-header">
+                                            <h4>2. Phát hiện sai sót nghĩa vụ thuế</h4>
+                                            <span class="sub-toggle-icon">▼</span>
+                                        </div>
+                                        
+                                        
+                                        <div class="sub-process-header">
+                                            <h4>3. Xử lý tra soát thông tin</h4>
+                                            <span class="sub-toggle-icon">▼</span>
+                                        </div>
+                                        
+                                        
+                                        <div class="sub-process-header">
+                                            <h4>4. Xử lý nghĩa vụ thuế (bao gồm nộp thừa/nợ thuế)</h4>
                                             <span class="sub-toggle-icon">▼</span>
                                         </div>
                                         <div class="sub-process-content">
-                                            <div class="process-item system">Xử lý theo quy trình kê khai và kiểm tra điều kiện kê khai (mục IV) <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item system">Hệ thống nhận tờ khai có dòng hoàn thuế hoặc MẪU ĐỀ NGHỊ HOÀN RIÊNG <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item system">So sánh tờ khai, hóa đơn đầu vào, giao dịch tài chính, báo cáo tài chính, số liệu CQT theo dõi, kiểm tra số nợ thuế… <span class="badge">Hệ thống</span></div>
-                                            
-                                            <!-- Bổ sung nguồn dữ liệu -->
-                                            <div class="data-sources">
-                                                <h5>Nguồn thông tin, dữ liệu:</h5>
-                                                <div class="data-source-item">Dữ liệu tờ khai thuế <span class="data-source-badge">CSDL Hồ sơ NNT</span></div>
-                                                <div class="data-source-item">Hệ thống hóa đơn điện tử <span class="data-source-badge">API</span></div>
-                                                <div class="data-source-item">Hệ thống giao dịch tài chính ngân hàng <span class="data-source-badge">API</span></div>
-                                                <div class="data-source-item">Báo cáo tài chính của doanh nghiệp <span class="data-source-badge">CSDL Hồ sơ NNT</span></div>
-                                            </div>
+                                            <div class="process-item combined">4.1 Xác nhận nghĩa vụ thuế <span class="badge">Hệ thông/CBT</span></div>
+                                            <div class="process-item combined">4.2 Xử lý nộp thừa <span class="badge">Hệ thông/CBT</span></div>
+                                            <div class="process-item combined">4.3 Quản lý nợ thuế <span class="badge">Hệ thông/CBT</span></div>                                            
                                         </div>
                                         
                                         <div class="sub-process-header">
-                                            <h4>2. Xử lý hồ sơ</h4>
+                                            <h4>5. Báo cáo, cập nhật dữ liệu</h4>
                                             <span class="sub-toggle-icon">▼</span>
                                         </div>
                                         <div class="sub-process-content">
-                                            <div class="process-item system">2.1 Kiểm tra điều kiện, thời hạn hoàn thuế <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item system">2.2 Phân loại hồ sơ theo rủi ro <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item combined">2.3 Xác minh tính hợp lệ của hồ sơ, chứng từ <span class="badge">Phối hợp</span></div>
-                                            <div class="process-item system">2.4 Xác định số tiền hoàn thuế <span class="badge">Hệ thống</span></div>
-                                            
-                                            <!-- Bổ sung nguồn dữ liệu -->
-                                            <div class="data-sources">
-                                                <h5>Nguồn thông tin, dữ liệu:</h5>
-                                                <div class="data-source-item">Quy định về hoàn thuế <span class="data-source-badge">CSDL nội bộ</span></div>
-                                                <div class="data-source-item">Quy tắc phân loại rủi ro hoàn thuế <span class="data-source-badge">CSDL rủi ro</span></div>
-                                                <div class="data-source-item">Lịch sử hoàn thuế của NNT <span class="data-source-badge">CSDL Hồ sơ NNT</span></div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="sub-process-header">
-                                            <h4>3. Trả kết quả xử lý</h4>
-                                            <span class="sub-toggle-icon">▼</span>
-                                        </div>
-                                        <div class="sub-process-content">
-                                            <div class="process-item system">3.1 Thông báo kết quả hoàn thuế <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item system">3.2 Chuyển tiền hoàn thuế <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item system">3.3 Cập nhật số liệu hoàn thuế <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item system">3.4 Đánh giá sự hài lòng <span class="badge">Hệ thống</span></div>
-                                            
-                                            <!-- Bổ sung nguồn dữ liệu -->
-                                            <div class="data-sources">
-                                                <h5>Nguồn thông tin, dữ liệu:</h5>
-                                                <div class="data-source-item">Mẫu thông báo hoàn thuế <span class="data-source-badge">CSDL nội bộ</span></div>
-                                                <div class="data-source-item">Hệ thống ngân hàng <span class="data-source-badge">API</span></div>
-                                                <div class="data-source-item">Sổ theo dõi hoàn thuế <span class="data-source-badge">CSDL Hồ sơ NNT</span></div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="sub-process-header">
-                                            <h4>4. Xử lý trong trường hợp Hệ thống có cảnh báo rủi ro/xử lý vi phạm</h4>
-                                            <span class="sub-toggle-icon">▼</span>
-                                        </div>
-                                        <div class="sub-process-content">
-                                            <div class="process-item officer">4.1 Phân công CBT xử lý <span class="badge">Cán bộ</span></div>
-                                            <div class="process-item combined">4.2 Thực hiện kiểm tra, xác minh hồ sơ <span class="badge">Phối hợp</span></div>
-                                            <div class="process-item officer">4.3 Xử lý vi phạm nếu có <span class="badge">Cán bộ</span></div>
-                                            <div class="process-item system">4.4 Phân tích xu hướng hoàn thuế <span class="badge">Hệ thống</span></div>
-                                        </div>
-                                        
-                                        <div class="sub-process-header">
-                                            <h4>5. Báo cáo kết quả thực hiện</h4>
-                                            <span class="sub-toggle-icon">▼</span>
-                                        </div>
-                                        <div class="sub-process-content">
-                                            <div class="process-item system">5.1 Tổng hợp số liệu hoàn thuế <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item system">5.2 Phân tích hiệu quả hoàn thuế <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item combined">5.3 Báo cáo định kỳ về tình hình hoàn thuế <span class="badge">Phối hợp</span></div>
+                                            <div class="process-item system">5.1 Quản lý thông tin nghĩa vụ thuế <span class="badge">Hệ thống</span></div>
+                                            <div class="process-item system">5.2 Tổng hợp BC kết quả, BC kiểm soátế <span class="badge">Hệ thống</span></div>
                                         </div>
                                     </div>
                                 </div>
@@ -5308,79 +5083,30 @@ Hiện hành các quy trình nghiệp vụ quản lý thuế được thực hi�
                                             <h4>1. Tiếp nhận hồ sơ</h4>
                                             <span class="sub-toggle-icon">▼</span>
                                         </div>
-                                        <div class="sub-process-content">
-                                            <div class="process-item system">Xử lý theo quy trình kê khai và kiểm tra điều kiện kê khai (mục IV) <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item system">Hệ thống nhận tờ khai có dòng hoàn thuế hoặc MẪU ĐỀ NGHỊ HOÀN RIÊNG <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item system">So sánh tờ khai, hóa đơn đầu vào, giao dịch tài chính, báo cáo tài chính, số liệu CQT theo dõi, kiểm tra số nợ thuế… <span class="badge">Hệ thống</span></div>
-                                            
-                                            <!-- Bổ sung nguồn dữ liệu -->
-                                            <div class="data-sources">
-                                                <h5>Nguồn thông tin, dữ liệu:</h5>
-                                                <div class="data-source-item">Dữ liệu tờ khai thuế <span class="data-source-badge">CSDL Hồ sơ NNT</span></div>
-                                                <div class="data-source-item">Hệ thống hóa đơn điện tử <span class="data-source-badge">API</span></div>
-                                                <div class="data-source-item">Hệ thống giao dịch tài chính ngân hàng <span class="data-source-badge">API</span></div>
-                                                <div class="data-source-item">Báo cáo tài chính của doanh nghiệp <span class="data-source-badge">CSDL Hồ sơ NNT</span></div>
-                                            </div>
-                                        </div>
+                                        
                                         
                                         <div class="sub-process-header">
                                             <h4>2. Xử lý hồ sơ</h4>
                                             <span class="sub-toggle-icon">▼</span>
                                         </div>
-                                        <div class="sub-process-content">
-                                            <div class="process-item system">2.1 Kiểm tra điều kiện, thời hạn hoàn thuế <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item system">2.2 Phân loại hồ sơ theo rủi ro <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item combined">2.3 Xác minh tính hợp lệ của hồ sơ, chứng từ <span class="badge">Phối hợp</span></div>
-                                            <div class="process-item system">2.4 Xác định số tiền hoàn thuế <span class="badge">Hệ thống</span></div>
-                                            
-                                            <!-- Bổ sung nguồn dữ liệu -->
-                                            <div class="data-sources">
-                                                <h5>Nguồn thông tin, dữ liệu:</h5>
-                                                <div class="data-source-item">Quy định về hoàn thuế <span class="data-source-badge">CSDL nội bộ</span></div>
-                                                <div class="data-source-item">Quy tắc phân loại rủi ro hoàn thuế <span class="data-source-badge">CSDL rủi ro</span></div>
-                                                <div class="data-source-item">Lịch sử hoàn thuế của NNT <span class="data-source-badge">CSDL Hồ sơ NNT</span></div>
-                                            </div>
-                                        </div>
+                                        
                                         
                                         <div class="sub-process-header">
                                             <h4>3. Trả kết quả xử lý</h4>
                                             <span class="sub-toggle-icon">▼</span>
                                         </div>
-                                        <div class="sub-process-content">
-                                            <div class="process-item system">3.1 Thông báo kết quả hoàn thuế <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item system">3.2 Chuyển tiền hoàn thuế <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item system">3.3 Cập nhật số liệu hoàn thuế <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item system">3.4 Đánh giá sự hài lòng <span class="badge">Hệ thống</span></div>
-                                            
-                                            <!-- Bổ sung nguồn dữ liệu -->
-                                            <div class="data-sources">
-                                                <h5>Nguồn thông tin, dữ liệu:</h5>
-                                                <div class="data-source-item">Mẫu thông báo hoàn thuế <span class="data-source-badge">CSDL nội bộ</span></div>
-                                                <div class="data-source-item">Hệ thống ngân hàng <span class="data-source-badge">API</span></div>
-                                                <div class="data-source-item">Sổ theo dõi hoàn thuế <span class="data-source-badge">CSDL Hồ sơ NNT</span></div>
-                                            </div>
-                                        </div>
+                                        
                                         
                                         <div class="sub-process-header">
-                                            <h4>4. Xử lý trong trường hợp Hệ thống có cảnh báo rủi ro/xử lý vi phạm</h4>
+                                            <h4>4. Kiểm soát, xử lý rủi ro</h4>
                                             <span class="sub-toggle-icon">▼</span>
                                         </div>
-                                        <div class="sub-process-content">
-                                            <div class="process-item officer">4.1 Phân công CBT xử lý <span class="badge">Cán bộ</span></div>
-                                            <div class="process-item combined">4.2 Thực hiện kiểm tra, xác minh hồ sơ <span class="badge">Phối hợp</span></div>
-                                            <div class="process-item officer">4.3 Xử lý vi phạm nếu có <span class="badge">Cán bộ</span></div>
-                                            <div class="process-item system">4.4 Phân tích xu hướng hoàn thuế <span class="badge">Hệ thống</span></div>
-                                        </div>
-                                        
+                                                                                
                                         <div class="sub-process-header">
                                             <h4>5. Báo cáo kết quả thực hiện</h4>
                                             <span class="sub-toggle-icon">▼</span>
                                         </div>
-                                        <div class="sub-process-content">
-                                            <div class="process-item system">5.1 Tổng hợp số liệu hoàn thuế <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item system">5.2 Phân tích hiệu quả hoàn thuế <span class="badge">Hệ thống</span></div>
-                                            <div class="process-item combined">5.3 Báo cáo định kỳ về tình hình hoàn thuế <span class="badge">Phối hợp</span></div>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -5479,5 +5205,3 @@ Hiện hành các quy trình nghiệp vụ quản lý thuế được thực hi�
     </script>
 </body>
 </html>
-
-
